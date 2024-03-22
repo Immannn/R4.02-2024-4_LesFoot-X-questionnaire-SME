@@ -10,7 +10,7 @@ import java.io.IOException;
 public class QuestionnaireImpl implements IQuestionnaire {
 
     @Override
-    public QuestionnairesDTO chargerQuestionnaire(String url, String nomFichier) throws FichierIntrouvableException, FormatFichierInvalideException, IOException {
+    public QuestionnairesDTO chargerQuestionnaire(String url) throws FichierIntrouvableException, FormatFichierInvalideException, IOException {
         return null;
     }
 }
