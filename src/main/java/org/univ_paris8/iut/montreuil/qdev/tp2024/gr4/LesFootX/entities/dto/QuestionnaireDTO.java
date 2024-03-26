@@ -1,5 +1,6 @@
 package org.univ_paris8.iut.montreuil.qdev.tp2024.gr4.LesFootX.entities.dto;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
@@ -7,12 +8,16 @@ public class QuestionnaireDTO {
 
     private List<QuestionDTO> lsteQuestion;
 
-    public QuestionnaireDTO(List<QuestionDTO> lsteQuestion) {
-        this.lsteQuestion = lsteQuestion;
+    public QuestionnaireDTO() {
+        this.lsteQuestion = new ArrayList<>();
     }
 
     public List<QuestionDTO> getLsteQuestion() {
         return lsteQuestion;
+    }
+
+    public void addQuestion(QuestionDTO q){
+        lsteQuestion.add(q);
     }
 
     public void setLsteQuestion(List<QuestionDTO> lsteQuestion) {

@@ -25,6 +25,10 @@ public class QuestionDTO {
         this.reference = reference;
     }
 
+    public QuestionDTO() {
+
+    }
+
     public long getId_questionnaire() {
         return id_questionnaire;
     }

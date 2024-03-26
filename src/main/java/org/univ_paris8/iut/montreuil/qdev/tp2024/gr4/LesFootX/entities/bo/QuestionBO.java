@@ -12,8 +12,7 @@ public class QuestionBO {
     private String explication;
     private String reference;
 
-    public QuestionBO(String id_questionnaire, String num_questionnaire, String langue, String libelle_question, String reponse, String difficulte, String explication, String reference) {
-        this.id_questionnaire = id_questionnaire;
+    public QuestionBO(String num_questionnaire, String langue, String libelle_question, String reponse, String difficulte, String explication, String reference) {
         this.num_questionnaire = num_questionnaire;
         this.langue = langue;
         this.libelle_question = libelle_question;

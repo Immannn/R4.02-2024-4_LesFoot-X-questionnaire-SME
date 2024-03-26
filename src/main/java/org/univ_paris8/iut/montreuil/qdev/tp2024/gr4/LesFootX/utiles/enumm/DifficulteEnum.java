@@ -8,18 +8,25 @@ public enum DifficulteEnum {
     private final int id;
     private final String label;
 
-    // Constructeur privé de l'énumération
-    private DifficulteEnum(int id, String label) {
+    DifficulteEnum(int id, String label) {
         this.id = id;
         this.label = label;
     }
 
-    // Accesseurs pour les attributs de l'énumération
     public int getId() {
         return id;
     }
 
     public String getLabel() {
         return label;
+    }
+
+    public static DifficulteEnum getById(int id) {
+        for (DifficulteEnum value : values()) {
+            if (value.getId() == id) {
+                return value;
+            }
+        }
+        throw new IllegalArgumentException("Aucune constante d'énumération DifficulteEnum avec id: " + id);
     }
 }
